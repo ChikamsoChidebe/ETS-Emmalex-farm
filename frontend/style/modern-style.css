@@ -3794,6 +3794,25 @@ body {
   gap: var(--space-lg);
 }
 
+/* ===== MOBILE FLOATING NAVIGATION OVERRIDE ===== */
+.mobile-floating-nav {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  width: auto !important;
+  height: auto !important;
+  z-index: 999999 !important;
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .mobile-floating-nav {
+    display: block !important;
+  }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .mobile-menu-toggle {
