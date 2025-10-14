@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Mobile Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/fixes.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            height: 200vh;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+        }
+        .test-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-content">
+        <h1>Mobile Navigation Test</h1>
+        <p>Resize your browser to mobile width (below 1024px) to see the vertical stacked navigation at bottom left.</p>
+        <p>Scroll down to test the fixed positioning...</p>
+    </div>
+
+    <!-- Vertical Stacked Navigation -->
+    <div class="mobile-floating-nav" id="mobileFloatingNav">
+        <div class="floating-nav-content">
+            <a href="index.html" class="floating-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="pages/service.html" class="floating-nav-item">
+                <i class="fas fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <a href="pages/about-us.html" class="floating-nav-item">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="pages/contact-us.html" class="floating-nav-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+            <a href="pages/booking.html" class="floating-nav-item floating-nav-cta">
+                <i class="fas fa-calendar-check"></i>
+                <span>Book Now</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts/floating-nav.js"></script>
+</body>
+</html>
