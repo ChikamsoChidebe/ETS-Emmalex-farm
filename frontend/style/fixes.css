@@ -84,11 +84,11 @@
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  border-radius: 16px !important;
+  border-radius: 12px !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   z-index: 999999 !important;
-  padding: 12px !important;
+  padding: 8px !important;
   display: none !important;
   transform: none !important;
   margin: 0 !important;
@@ -113,32 +113,33 @@
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 4px !important;
   width: 100% !important;
 }
 
 .floating-nav-item {
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: column !important;
   align-items: center !important;
+  justify-content: center !important;
   text-decoration: none !important;
   color: #2c5530 !important;
-  font-size: 0.85rem !important;
+  font-size: 0.7rem !important;
   font-weight: 500 !important;
-  padding: 12px 16px !important;
-  border-radius: 12px !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
   transition: all 0.3s ease !important;
-  min-width: 120px !important;
-  text-align: left !important;
-  width: 100% !important;
-  white-space: nowrap !important;
+  width: 45px !important;
+  height: 45px !important;
+  text-align: center !important;
+  position: relative !important;
 }
 
 .floating-nav-item i {
-  font-size: 1.1rem;
-  margin-right: 8px;
-  width: 20px;
-  text-align: center;
+  font-size: 1.2rem !important;
+  margin: 0 !important;
+  width: auto !important;
+  text-align: center !important;
 }
 
 .floating-nav-item:hover,
@@ -149,12 +150,19 @@
 }
 
 .floating-nav-cta {
-  background: linear-gradient(135deg, #2c5530, #4a7c59);
-  color: white;
-  padding: 12px 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(44, 85, 48, 0.3);
-  margin-top: 4px;
+  background: linear-gradient(135deg, #2c5530, #4a7c59) !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(44, 85, 48, 0.3) !important;
+  margin-top: 2px !important;
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.floating-nav-cta i {
+  color: white !important;
+  font-size: 1.2rem !important;
 }
 
 .floating-nav-cta:hover {
@@ -165,7 +173,11 @@
 
 .floating-nav-cta.active {
   background: linear-gradient(135deg, #2c5530, #4a7c59);
-  color: white;
+  color: white !important;
+}
+
+.floating-nav-cta.active i {
+  color: white !important;
 }
 
 .mobile-menu-header {

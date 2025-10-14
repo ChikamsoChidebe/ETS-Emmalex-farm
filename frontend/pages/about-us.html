@@ -103,31 +103,33 @@
             </div>
         </div>
         
-        <div class="mobile-floating-nav" id="mobileFloatingNav">
-            <div class="floating-nav-content">
-                <a href="../index.html" class="floating-nav-item">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <a href="service.html" class="floating-nav-item">
-                    <i class="fas fa-cogs"></i>
-                    <span>Services</span>
-                </a>
-                <a href="about-us.html" class="floating-nav-item active">
-                    <i class="fas fa-info-circle"></i>
-                    <span>About</span>
-                </a>
-                <a href="contact-us.html" class="floating-nav-item">
-                    <i class="fas fa-phone"></i>
-                    <span>Contact</span>
-                </a>
-                <a href="booking.html" class="floating-nav-item floating-nav-cta">
-                    <i class="fas fa-calendar-check"></i>
-                    <span>Book</span>
-                </a>
-            </div>
-        </div>
     </nav>
+    
+    <!-- Mobile Floating Navigation -->
+    <div class="mobile-floating-nav" id="mobileFloatingNav">
+        <div class="floating-nav-content">
+            <a href="../index.html" class="floating-nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="service.html" class="floating-nav-item">
+                <i class="fas fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <a href="about-us.html" class="floating-nav-item active">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="contact-us.html" class="floating-nav-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+            <a href="booking.html" class="floating-nav-item floating-nav-cta">
+                <i class="fas fa-calendar-check"></i>
+                <span>Book</span>
+            </a>
+        </div>
+    </div>
 
     <main class="modern-main">
         <!-- Hero Section -->
@@ -615,7 +617,30 @@
     <script src="../scripts/translate.js"></script>
     <script src="../scripts/animate.js"></script>
 
+    <style>
+        .mobile-floating-nav {
+            position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            top: auto !important;
+            left: auto !important;
+            z-index: 999999 !important;
+            display: none !important;
+        }
+        @media (max-width: 1024px) {
+            .mobile-floating-nav { display: block !important; }
+        }
+    </style>
+    
     <script>
+        // Force Mobile Navigation Position
+        document.addEventListener('DOMContentLoaded', function() {
+            const floatingNav = document.getElementById('mobileFloatingNav');
+            if (floatingNav) {
+                floatingNav.style.cssText = 'position:fixed!important;bottom:20px!important;right:20px!important;top:auto!important;left:auto!important;z-index:999999!important;display:' + (window.innerWidth <= 1024 ? 'block' : 'none') + '!important';
+            }
+        });
+        
         // Initialize Google Translate
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({

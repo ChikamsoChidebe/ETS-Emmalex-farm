@@ -107,31 +107,33 @@
             </div>
         </div>
         
-        <div class="mobile-floating-nav" id="mobileFloatingNav">
-            <div class="floating-nav-content">
-                <a href="index.html" class="floating-nav-item active">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <a href="pages/service.html" class="floating-nav-item">
-                    <i class="fas fa-cogs"></i>
-                    <span>Services</span>
-                </a>
-                <a href="pages/about-us.html" class="floating-nav-item">
-                    <i class="fas fa-info-circle"></i>
-                    <span>About</span>
-                </a>
-                <a href="pages/contact-us.html" class="floating-nav-item">
-                    <i class="fas fa-phone"></i>
-                    <span>Contact</span>
-                </a>
-                <a href="pages/booking.html" class="floating-nav-item floating-nav-cta">
-                    <i class="fas fa-calendar-check"></i>
-                    <span>Book</span>
-                </a>
-            </div>
-        </div>
     </nav>
+    
+    <!-- Mobile Floating Navigation -->
+    <div class="mobile-floating-nav" id="mobileFloatingNav">
+        <div class="floating-nav-content">
+            <a href="index.html" class="floating-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="pages/service.html" class="floating-nav-item">
+                <i class="fas fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <a href="pages/about-us.html" class="floating-nav-item">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="pages/contact-us.html" class="floating-nav-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+            <a href="pages/booking.html" class="floating-nav-item floating-nav-cta">
+                <i class="fas fa-calendar-check"></i>
+                <span>Book</span>
+            </a>
+        </div>
+    </div>
 
     <main class="modern-main">
         <!-- Hero Section -->
@@ -1251,6 +1253,21 @@
     <script src="scripts/animate.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/slowvid.js"></script>
+    
+    <style>
+        .mobile-floating-nav {
+            position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            top: auto !important;
+            left: auto !important;
+            z-index: 999999 !important;
+            display: none !important;
+        }
+        @media (max-width: 1024px) {
+            .mobile-floating-nav { display: block !important; }
+        }
+    </style>
 
     <script>
         // Initialize Google Translate
@@ -1351,6 +1368,12 @@
             });
         });
 
+        // Force Mobile Navigation Position
+        const floatingNav = document.getElementById('mobileFloatingNav');
+        if (floatingNav) {
+            floatingNav.style.cssText = 'position:fixed!important;bottom:20px!important;right:20px!important;top:auto!important;left:auto!important;z-index:999999!important;display:' + (window.innerWidth <= 1024 ? 'block' : 'none') + '!important';
+        }
+        
         // Mobile Menu
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -1385,6 +1408,12 @@
                 navbar.style.position = 'fixed';
                 navbar.style.top = '0';
                 navbar.style.transform = 'translateY(0)';
+            }
+            
+            // Force floating nav position on scroll
+            const floatingNav = document.getElementById('mobileFloatingNav');
+            if (floatingNav && window.innerWidth <= 1024) {
+                floatingNav.style.cssText = 'position:fixed!important;bottom:20px!important;right:20px!important;top:auto!important;left:auto!important;z-index:999999!important;display:block!important';
             }
         });
 

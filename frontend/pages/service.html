@@ -32,7 +32,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="modern-nav" id="navbar">
+    <nav class="modern-nav" id="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 10000; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px);">
         <div class="nav-top-bar">
             <div class="nav-container">
                 <div class="nav-contact-info">
@@ -102,34 +102,35 @@
                 </div>
             </div>
         </div>
-        
-        <div class="mobile-floating-nav" id="mobileFloatingNav">
-            <div class="floating-nav-content">
-                <a href="../index.html" class="floating-nav-item">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <a href="service.html" class="floating-nav-item active">
-                    <i class="fas fa-cogs"></i>
-                    <span>Services</span>
-                </a>
-                <a href="about-us.html" class="floating-nav-item">
-                    <i class="fas fa-info-circle"></i>
-                    <span>About</span>
-                </a>
-                <a href="contact-us.html" class="floating-nav-item">
-                    <i class="fas fa-phone"></i>
-                    <span>Contact</span>
-                </a>
-                <a href="booking.html" class="floating-nav-item floating-nav-cta">
-                    <i class="fas fa-calendar-check"></i>
-                    <span>Book</span>
-                </a>
-            </div>
-        </div>
     </nav>
+    
+    <!-- Mobile Floating Navigation -->
+    <div class="mobile-floating-nav" id="mobileFloatingNav">
+        <div class="floating-nav-content">
+            <a href="../index.html" class="floating-nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="service.html" class="floating-nav-item active">
+                <i class="fas fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <a href="about-us.html" class="floating-nav-item">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="contact-us.html" class="floating-nav-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+            <a href="booking.html" class="floating-nav-item floating-nav-cta">
+                <i class="fas fa-calendar-check"></i>
+                <span>Book</span>
+            </a>
+        </div>
+    </div>
 
-    <main class="modern-main">
+    <main class="modern-main" style="margin-top: 120px;">
         <!-- Hero Section -->
         <section class="page-hero">
             <div class="hero-background">
@@ -594,7 +595,6 @@
                     <div class="footer-section company-info">
                         <div class="footer-brand">
                             <img src="../assets/service/logobr.png" alt="ETS Emmalex Farm" class="footer-logo">
-                            <h3>ETS Emmalex Farm</h3>
                             <p class="brand-tagline">Premium Agricultural Excellence Since 2008</p>
                         </div>
                         <p class="company-description">
