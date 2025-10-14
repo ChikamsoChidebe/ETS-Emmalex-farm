@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Navigation Position Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            height: 200vh;
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            padding: 20px;
+        }
+        
+        .test-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        /* Mobile Floating Navigation - Force Bottom Right */
+        .mobile-floating-nav {
+            position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            top: auto !important;
+            left: auto !important;
+            width: auto !important;
+            height: auto !important;
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(20px) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            z-index: 999999 !important;
+            padding: 12px !important;
+            display: block !important;
+            transform: none !important;
+            margin: 0 !important;
+        }
+        
+        .floating-nav-content {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 8px !important;
+        }
+        
+        .floating-nav-item {
+            display: flex !important;
+            align-items: center !important;
+            text-decoration: none !important;
+            color: #2c5530 !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+            padding: 12px 16px !important;
+            border-radius: 12px !important;
+            transition: all 0.3s ease !important;
+            min-width: 120px !important;
+            text-align: left !important;
+            white-space: nowrap !important;
+        }
+        
+        .floating-nav-item i {
+            margin-right: 8px !important;
+            width: 20px !important;
+            text-align: center !important;
+        }
+        
+        .floating-nav-item:hover {
+            background: rgba(44, 85, 48, 0.1) !important;
+            transform: translateY(-2px) !important;
+        }
+        
+        .floating-nav-cta {
+            background: linear-gradient(135deg, #2c5530, #4a7c59) !important;
+            color: white !important;
+            margin-top: 4px !important;
+        }
+        
+        .floating-nav-cta:hover {
+            background: linear-gradient(135deg, #1a3d1f, #2c5530) !important;
+            color: white !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="test-content">
+        <h1>Mobile Navigation Position Test</h1>
+        <p>This page tests the mobile floating navigation positioning. The navigation should appear at the bottom-right corner of the screen.</p>
+        <p>Scroll down to see if the navigation stays fixed in position.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br><br>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br><br>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+
+    <!-- Mobile Floating Navigation -->
+    <div class="mobile-floating-nav" id="mobileFloatingNav">
+        <div class="floating-nav-content">
+            <a href="#" class="floating-nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="floating-nav-item">
+                <i class="fas fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <a href="#" class="floating-nav-item">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="#" class="floating-nav-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact</span>
+            </a>
+            <a href="#" class="floating-nav-item floating-nav-cta">
+                <i class="fas fa-calendar-check"></i>
+                <span>Book</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Force positioning on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.getElementById('mobileFloatingNav');
+            if (nav) {
+                nav.style.cssText = `
+                    position: fixed !important;
+                    bottom: 20px !important;
+                    right: 20px !important;
+                    top: auto !important;
+                    left: auto !important;
+                    z-index: 999999 !important;
+                    display: block !important;
+                `;
+                console.log('Navigation positioned at bottom-right');
+            }
+        });
+    </script>
+</body>
+</html>
