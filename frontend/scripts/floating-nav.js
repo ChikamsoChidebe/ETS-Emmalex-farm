@@ -3,18 +3,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const floatingNav = document.getElementById('mobileFloatingNav');
     
     if (floatingNav) {
-        // Ensure floating nav is visible on mobile
-        function checkMobile() {
+        // Force positioning and visibility
+        function setupNav() {
             if (window.innerWidth <= 1024) {
                 floatingNav.style.display = 'block';
+                floatingNav.style.position = 'fixed';
+                floatingNav.style.bottom = '20px';
+                floatingNav.style.right = '20px';
+                floatingNav.style.top = 'auto';
+                floatingNav.style.left = 'auto';
+                floatingNav.style.zIndex = '999999';
             } else {
                 floatingNav.style.display = 'none';
             }
         }
         
         // Check on load and resize
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
+        setupNav();
+        window.addEventListener('resize', setupNav);
         
         // Add active state to current page
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
