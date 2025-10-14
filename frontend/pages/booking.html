@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - ETS Emmalex Farm | Book Premium Donkey & Cocoa Products | Nigeria's Leading Agricultural Excellence</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Book premium donkey products, farm visits, and cocoa products at ETS Emmalex Farm. Easy online booking for live donkeys, milk, meat, and educational tours.">
+    <meta name="keywords" content="book donkey products, farm booking, donkey milk booking, farm visit booking, Nigeria donkey farm">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../style/modern-style.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/fixes.css">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+    
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="modern-nav" id="navbar">
+        <div class="nav-top-bar">
+            <div class="nav-container">
+                <div class="nav-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Angwan Mainasara, Uke, Karu L.G.A, Nasarawa State Nigeria</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>08037294665</span>
+                    </div>
+                </div>
+                <div class="nav-utilities">
+                    <div id="google_translate_element"></div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100085573660332" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/etsemmalex?s=21&t=QrAEBDWmhA5IQHWq9Khbkg" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/etsemmalex?igshid=YmMyMTA2M2Y=" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-main">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="../assets/service/logobr.png" alt="ETS Emmalex Farm" class="nav-logo">
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="nav-link active">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="contact-us.html" class="btn-primary nav-cta">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <img src="../assets/service/logobr.png" alt="ETS Emmalex Farm" class="mobile-menu-logo">
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <nav class="mobile-menu-nav">
+                    <a href="../index.html" class="mobile-nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="service.html" class="mobile-nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="gallery.html" class="mobile-nav-link">
+                        <i class="fas fa-images"></i>
+                        <span>Gallery</span>
+                    </a>
+                    <a href="about-us.html" class="mobile-nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="booking.html" class="mobile-nav-link active">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Booking</span>
+                    </a>
+                    <a href="contact-us.html" class="mobile-nav-link">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact</span>
+                    </a>
+                    <a href="booking.html" class="mobile-nav-cta">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Book Now</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+    <main class="modern-main">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-background">
+                <img src="../assets/landing_page/Donkeys-960x640.jpg" alt="Book ETS Emmalex Farm Services">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-container">
+                    <div class="breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Booking</span>
+                    </div>
+                    <h1 class="page-title">Book Our Services</h1>
+                    <p class="page-subtitle">
+                        Reserve premium donkey products, schedule farm visits, or place orders for our 
+                        high-quality agricultural products with ease.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods Section -->
+        <section class="contact-methods-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Easy Booking</span>
+                    <h2 class="section-title">Multiple Ways to Book</h2>
+                    <p class="section-description">
+                        Choose your preferred method to book our services. We make it easy to reserve 
+                        products and schedule visits through multiple convenient channels.
+                    </p>
+                </div>
+                
+                <div class="contact-methods-grid">
+                    <a href="tel:+2348037294665" class="contact-method-card">
+                        <div class="method-icon">
+                            <img src="../assets/booking/phone-46-64.png" alt="Phone Booking">
+                        </div>
+                        <div class="method-content">
+                            <h3>Book Via Phone Call</h3>
+                            <p>Speak directly with our team to discuss your requirements and make reservations</p>
+                            <span class="method-action">Call Now: +234 803 729 4665</span>
+                        </div>
+                        <div class="method-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=+2348037294665&text=I%20want%20to%20book%20services%20at%20ETS%20Emmalex%20Farm" class="contact-method-card">
+                        <div class="method-icon">
+                            <img src="../assets/booking/whatsapp-64.png" alt="WhatsApp Booking">
+                        </div>
+                        <div class="method-content">
+                            <h3>Book Via WhatsApp</h3>
+                            <p>Quick and convenient booking through WhatsApp messaging</p>
+                            <span class="method-action">Message Us on WhatsApp</span>
+                        </div>
+                        <div class="method-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:suchidebe@gmail.com?subject=Booking%20Request&body=I%20would%20like%20to%20book%20services%20at%20ETS%20Emmalex%20Farm" class="contact-method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Book Via Email</h3>
+                            <p>Send detailed booking requests and receive comprehensive information</p>
+                            <span class="method-action">Email: suchidebe@gmail.com</span>
+                        </div>
+                        <div class="method-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="contact-form-section">
+            <div class="section-container">
+                <div class="contact-content-grid">
+                    <!-- Booking Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <h2>Online Booking Form</h2>
+                            <p>Fill out the form below to make your booking request. We'll get back to you within 24 hours.</p>
+                        </div>
+                        
+                        <form class="contact-form" data-netlify="true" name="Booking" method="POST" action="/pages/successcom/">
+                            <input name="bot-field" style="display: none">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Type *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select service type</option>
+                                        <option value="live-donkeys">Live Donkeys</option>
+                                        <option value="donkey-milk">Donkey Milk</option>
+                                        <option value="donkey-meat">Donkey Meat</option>
+                                        <option value="cocoa-products">Cocoa Products</option>
+                                        <option value="farm-visit">Farm Visit/Excursion</option>
+                                        <option value="adoption">Donkey Adoption</option>
+                                        <option value="breeding">Breeding Services</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quantity">Quantity/Number of People</label>
+                                    <input type="number" id="quantity" name="quantity" placeholder="Enter quantity or number of visitors" min="1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Preferred Date</label>
+                                    <input type="date" id="date" name="date">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="requirements">Special Requirements/Details *</label>
+                                <textarea id="requirements" name="requirements" rows="6" placeholder="Please provide details about your booking requirements, specific breeds, visit preferences, etc." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-calendar-check"></i>
+                                Submit Booking Request
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Booking Information -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-card">
+                            <h3>Booking Information</h3>
+                            <p>Here's what you need to know about booking our services and products.</p>
+                            
+                            <div class="contact-info-list">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>Response Time</h4>
+                                        <p>We respond to all booking requests within 24 hours during business days</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>Advance Booking</h4>
+                                        <p>Farm visits require at least 48 hours advance notice. Product orders may vary</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>Quality Guarantee</h4>
+                                        <p>All our products come with health certificates and quality guarantees</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-truck"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>Delivery Options</h4>
+                                        <p>We offer delivery services across Nigeria with special arrangements for live animals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-connect">
+                                <h4>Follow Our Updates</h4>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/profile.php?id=100085573660332" class="social-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://twitter.com/etsemmalex?s=21&t=QrAEBDWmhA5IQHWq9Khbkg" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://instagram.com/etsemmalex?igshid=YmMyMTA2M2Y=" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview Section -->
+        <section class="services-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-badge">Available Services</span>
+                    <h2 class="section-title">What You Can Book</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Live Donkeys</h3>
+                            <p>Premium donkey breeds available for purchase or hire with health certificates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../assets/service/milk-64.png" alt="Donkey Milk">
+                        </div>
+                        <div class="service-content">
+                            <h3>Fresh Donkey Milk</h3>
+                            <p>Nutritious donkey milk extracted in sterile conditions and carefully packaged.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../assets/service/meat-01.png" alt="Donkey Meat">
+                        </div>
+                        <div class="service-content">
+                            <h3>Premium Donkey Meat</h3>
+                            <p>High-quality donkey meat from healthy animals, processed in world-class facilities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cocoa Products</h3>
+                            <p>Premium cocoa varieties and artisanal chocolate products from our sustainable farm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Farm Excursions</h3>
+                            <p>Educational farm visits with guided tours and donkey riding experiences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="../assets/service/group-64.png" alt="Adoption">
+                        </div>
+                        <div class="service-content">
+                            <h3>Donkey Adoption</h3>
+                            <p>Comprehensive adoption services with ongoing support and care guidelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modern Footer -->
+    <footer class="modern-footer">
+        <div class="footer-background">
+            <div class="footer-overlay"></div>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-section company-info">
+                        <div class="footer-brand">
+                            <img src="../assets/service/logobr.png" alt="ETS Emmalex Farm" class="footer-logo">
+                        </div>
+                        <p class="company-description">
+                            Nigeria's leading donkey and cocoa farm, committed to sustainable agriculture, 
+                            premium quality products, and exceptional customer service across Africa and beyond.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/profile.php?id=100085573660332" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/etsemmalex?s=21&t=QrAEBDWmhA5IQHWq9Khbkg" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/etsemmalex?igshid=YmMyMTA2M2Y=" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:suchidebe@gmail.com" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="service.html">Our Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="booking.html">Book Now</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="booking.html">Premium Donkeys</a></li>
+                            <li><a href="booking.html">Fresh Donkey Milk</a></li>
+                            <li><a href="booking.html">Quality Donkey Meat</a></li>
+                            <li><a href="booking.html">Cocoa Products</a></li>
+                            <li><a href="booking.html">Farm Excursions</a></li>
+                            <li><a href="slaughter.html">Processing House</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section contact-info">
+                        <h4 class="footer-title">Get In Touch</h4>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Our Location</h5>
+                                    <p>Angwan Mainasara, Uke, Karu L.G.A, Nasarawa State Nigeria</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Call Us</h5>
+                                    <p>+234 803 729 4665</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email Us</h5>
+                                    <p>suchidebe@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Working Hours</h5>
+                                    <p>Mon-Fri: 8:00 AM - 8:00 PM<br>Sat-Sun: 9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 ETS Emmalex Global Limited Farm. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="contact-us.html">Support</a>
+                    </div>
+                    <div class="back-to-top">
+                        <button class="back-to-top-btn" aria-label="Back to top">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../scripts/mobile-nav.js"></script>
+    <script src="../scripts/modern-interactions.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/translate.js"></script>
+    <script src="../scripts/animate.js"></script>
+
+    <script>
+        // Initialize Google Translate
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,fr,es,ar,zh,hi,pt,ru,ja,de',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+        // Mobile Menu
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (mobileMenuToggle && mobileMenu) {
+            mobileMenuToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                mobileMenu.classList.toggle('active');
+                mobileMenuToggle.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                }
+            });
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (navbar) {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                // Ensure navbar stays fixed
+                navbar.style.position = 'fixed';
+                navbar.style.top = '0';
+                navbar.style.transform = 'translateY(0)';
+            }
+        });
+
+        // Back to Top
+        const backToTopBtn = document.querySelector('.back-to-top-btn');
+        
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.style.opacity = '1';
+                    backToTopBtn.style.visibility = 'visible';
+                } else {
+                    backToTopBtn.style.opacity = '0';
+                    backToTopBtn.style.visibility = 'hidden';
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+</body>
+</html>

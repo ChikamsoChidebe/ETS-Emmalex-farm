@@ -1,0 +1,45 @@
+/*Primary color*/
+
+$bgColor: #813b0d;
+$Background-col: #fdf2ea54;
+$tranbgColor: #1e120bd3;
+$textColor: #1e120b;
+
+$large_screen: 1150px;
+$large_screenl: 1210px;
+$medium_screen: 960px;
+$mobile_screen: 560px;
+$medium_screenm: 1200px;
+$medium_screenl: 1300px;
+
+@mixin large {
+  @media (min-width: $large_screen) {
+    @content;
+  }
+}
+@mixin largel {
+  @media (min-width: $large_screenl) {
+    @content;
+  }
+}
+
+@mixin mobileMax {
+  @media (max-width: $mobile_screen) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $medium_screen) {
+    @content;
+  }
+}
+@mixin mmedium {
+  @media (min-width: $medium_screenm) {
+    @content;
+  }
+}
+@mixin lmedium {
+  @media (min-width: $medium_screenl) {
+    @content;
+  }
+}

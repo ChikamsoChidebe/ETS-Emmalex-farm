@@ -1,0 +1,1214 @@
+@import "./reset";
+@import "./variable";
+
+h2 {
+  color: $textColor;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  line-height: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+h5 {
+  color: $bgColor;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  margin-bottom: 1rem;
+}
+.EmailBooking {
+  h3 {
+    color: $bgColor;
+    margin-bottom: 1.5rem;
+  }
+}
+
+label {
+  color: $bgColor;
+  font-size: 0.65rem;
+  line-height: 1rem;
+  font-weight: 600;
+  @include medium {
+    font-size: 0.75rem;
+    line-height: 2rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.Container {
+  width: 90%;
+  padding-block: 4rem;
+  margin: 0 auto;
+
+  @include medium {
+    width: 90%;
+    padding-block: 6rem;
+  }
+  @include large {
+    width: 90%;
+    max-width: 1400px;
+  }
+}
+.pd {
+  padding-block: 4rem;
+  @include medium {
+    padding-block: 6rem;
+  }
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.ProductDetails {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include medium {
+    flex-direction: row;
+  }
+}
+
+.otherbooking {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include medium {
+    width: 45%;
+  }
+  .formItem {
+    margin-top: 0.5rem;
+  }
+  .first {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    @include medium {
+      margin-bottom: 0;
+    }
+  }
+  button {
+    align-self: flex-end;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: $bgColor;
+    margin-top: 2rem;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $textColor;
+      color: $textColor;
+    }
+  }
+}
+.BasicInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  // margin-bottom: 0.5rem;
+
+  @include medium {
+    gap: 0.5rem;
+    width: 45%;
+    margin: 0;
+  }
+  @include large {
+  }
+}
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid $textColor;
+}
+label {
+  font-size: 1rem;
+}
+// .qty {
+//   margin-top: 1rem;
+//   @include medium {
+//     margin-top: 0.5rem;
+//   }
+// }
+.desiredP {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.select {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+label {
+  display: flex;
+  gap: 0.5rem;
+}
+.CardFlex {
+  margin-bottom: 2rem;
+  .mainDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+    }
+    @include medium {
+      flex-direction: row;
+    }
+  }
+}
+.Card {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+  padding: 2rem 1rem;
+  @include medium {
+  }
+
+  h5 {
+    font-size: 1rem;
+    color: $textColor;
+    margin-bottom: 0.4rem;
+  }
+  p {
+    font-size: 0.8rem;
+    color: $textColor;
+  }
+
+  // &:hover {
+  //   background-color: rgba(255, 255, 255, 0.692);
+  // }
+}
+#img-icon {
+  max-width: 40px;
+}
+.heroFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  @include medium {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+.EmailBooking,
+.map {
+  width: 100%;
+}
+.map {
+  @include medium {
+    width: 40%;
+  }
+}
+.EmailBooking {
+  border-top: 3px solid $bgColor;
+  box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
+  padding: 2rem;
+  @include medium {
+    width: 55%;
+    padding: 2rem;
+  }
+}
+.DonkeyMeat,
+.DonkeyMilk,
+.LiveDonkey,
+.Excursions {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  @include medium {
+    gap: 0.5rem;
+  }
+}
+.Excursions,
+.DonkeyMeat {
+  margin-bottom: 1rem;
+  @include medium {
+    margin-bottom: 0;
+  }
+}
+.BreadCrumb {
+  background-image: url("../assets/service/donkeys-banner.webp");
+  // background-repeat: no-repeat;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  object-fit: fill;
+  z-index: -1;
+  @include large {
+    min-height: 300px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $textColor;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+  div {
+    position: relative;
+  }
+  h2 {
+    font-size: clamp(2rem, 3.5vw, 4.5rem);
+    margin-bottom: 1rem;
+    @include medium {
+      margin-bottom: 2rem;
+    }
+  }
+  h2,
+  p {
+    color: white;
+  }
+}
+.CardWrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .a-card {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
+    @include large {
+      width: 400px;
+      height: 450px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:hover .Card-info {
+      opacity: 1;
+      transform: translateY(150px);
+      @include large {
+        transform: translateY(270px);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(
+        to bottom,
+        rgba(53, 14, 14, 0.2),
+        rgba(53, 14, 14, 0.9)
+      );
+      transition: 0.5s all;
+      opacity: 0;
+    }
+    &:hover:before {
+      opacity: 1;
+    }
+    .Card-info {
+      position: relative;
+      z-index: 3;
+      color: white;
+      transform: translateY(300px);
+      opacity: 0;
+      transition: 0.5s all;
+      padding: 1rem;
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        @include medium {
+          font-size: 1.3rem;
+        }
+      }
+      @include large {
+        transform: translateY(500px);
+      }
+    }
+  }
+}
+
+.Serviceheader {
+  margin-bottom: 2rem;
+  h5 {
+    text-align: center;
+    color: $bgColor;
+    font-weight: 600;
+  }
+}
+.serviceCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.serviceCard {
+  display: flex;
+  max-width: 400px;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
+  padding: 1rem 1.5rem;
+  align-items: center;
+  @include mobileMax {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include medium {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .serviceCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    p {
+      line-height: 24px;
+    }
+  }
+  h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $bgColor;
+  }
+  .pdIcon {
+    padding: 1.3rem;
+    background-color: $bgColor;
+    border-radius: 50%;
+    &:hover {
+      background-color: $textColor;
+    }
+    img {
+      max-width: 40px;
+    }
+  }
+}
+.partnership {
+  background-color: $bgColor;
+}
+#abbatoir,
+#farm-crop,
+#feed,
+#medicine,
+#stable {
+  display: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.pageOne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  justify-content: center;
+}
+.home_gallery_pht_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.allWorks_buttons {
+  display: flex;
+  gap: 2rem;
+  button {
+    padding: 0.5rem 1rem;
+    background-color: $textColor;
+    color: white;
+    border-radius: 8px;
+    border: none;
+  }
+}
+.sucessBooking {
+  img {
+    width: 100%;
+    @include medium {
+      width: unset;
+    }
+  }
+}
+.pageTwo,
+.pageThree,
+.pageFour {
+  display: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.home_gallery--img {
+  max-width: 300px;
+  width: 100%;
+  @include medium {
+    max-width: 400px;
+  }
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.home_gallery_options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid $textColor;
+    border-radius: 8px;
+    color: $textColor;
+    @include medium {
+      padding: 1rem 2rem;
+    }
+  }
+}
+.firtSection,
+.FourthSection {
+  background-color: $Background-col;
+}
+.contact-us {
+  width: 100%;
+  display: block;
+  .BasicInfo {
+    width: 100%;
+  }
+  button {
+    align-self: flex-end;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: $bgColor;
+    margin-top: 2rem;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $textColor;
+      color: $textColor;
+    }
+  }
+}
+.IndexPage {
+  button {
+    padding: 0.6rem 1.1rem;
+    border-radius: 90px;
+    cursor: pointer;
+    border: none;
+    background-color: $bgColor;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+    &:hover {
+      background-color: white;
+      color: $bgColor;
+      border: 1px solid $bgColor;
+    }
+    @include medium {
+      padding: 0.8rem 1.8rem;
+    }
+    @include large {
+      padding: 1.1rem 2rem;
+    }
+  }
+}
+.HeroBG {
+  background-color: $Background-col;
+}
+.flexHeroMain {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  @include large {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+// .heroInfo {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 3rem;
+//   @include mobileMax {
+//     gap: 2rem;
+//   }
+//   .h1 {
+//     // font-size: clamp(3rem, 3.5vw, 7rem);
+//     font-size: 3rem;
+//     font-weight: 600;
+//     @include mobileMax {
+//       font-size: 2rem;
+//     }
+//     @include medium {
+//       font-size: 4rem;
+//       line-height: 80px;
+//     }
+//     @include largel {
+//       font-size: 4.5rem;
+//       line-height: 104px;
+//     }
+//   }
+//   h6 {
+//     font-weight: 400;
+//     // font-size: clamp(1rem, 3.5vw, 1.5rem);
+//     font-size: 0.7rem;
+//     line-height: 25px;
+//     color: $bgColor;
+//     @include medium {
+//       font-size: 1rem;
+//       line-height: 45px;
+//     }
+//     @include mobileMax {
+//       font-size: 0.5rem;
+//     }
+//   }
+//   span {
+//     display: flex;
+//     flex-direction: column;
+//     color: $bgColor;
+//     align-items: center;
+//     @include large {
+//       align-items: flex-start;
+//     }
+//     img {
+//       width: 85%;
+//     }
+//     #mobile-line {
+//       width: 70%;
+//       @include medium {
+//         width: 85%;
+//       }
+//       @include mobileMax {
+//         width: 60%;
+//         max-width: 220px;
+//       }
+//     }
+//   }
+//   .Herobtn {
+//     display: flex;
+//     gap: 2rem;
+//     justify-content: center;
+//     @include large {
+//       gap: 3rem;
+//       justify-content: flex-start;
+//     }
+//     @include mobileMax {
+//       flex-direction: column;
+//       gap: 1rem;
+//     }
+//   }
+
+//   #second-btn {
+//     background-color: white;
+//     color: $bgColor;
+//     &:hover {
+//       background-color: $bgColor;
+//       color: white;
+//       border: none;
+//     }
+//   }
+// }
+.heroImg {
+  width: 60%;
+  img {
+    width: 100%;
+  }
+  @include medium {
+    width: 46%;
+  }
+}
+.desktop {
+  display: none;
+
+  @include large {
+    display: block;
+  }
+}
+.mainDonkeySpecies {
+  background-color: white;
+}
+.HomeAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include medium {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .HomeAboutusImg {
+    width: 100%;
+    img {
+      width: 100%;
+      @include medium {
+        min-height: 700px;
+      }
+    }
+    @include medium {
+      width: 40%;
+    }
+  }
+  .aboutUsinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include medium {
+      width: 50%;
+      gap: 1.5rem;
+    }
+
+    h2 {
+      text-align: left;
+      color: $textColor;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: $textColor;
+      line-height: 24px;
+    }
+  }
+}
+.partnership {
+  .napri {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    p {
+      color: white;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: 150px;
+  }
+  .Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.HomepageService {
+  background-color: $Background-col;
+}
+.Adoption,
+.Excursions {
+  display: none;
+}
+.bookingInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.videoSection {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $textColor;
+    opacity: 0.8;
+  }
+  video {
+    object-fit: center;
+    min-height: 60vh;
+    @include mobileMax {
+      min-height: 40vh;
+      width: unset;
+    }
+    @include medium {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.mainHeroVideoCon {
+  position: relative;
+
+  top: -30rem;
+  z-index: 9999;
+  @include mobileMax {
+    top: -35rem;
+  }
+  @include large {
+    top: -40rem;
+  }
+}
+.heroVideoInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include mobileMax {
+    gap: 2rem;
+    align-items: center;
+  }
+  @include medium {
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  h1 {
+    // font-size: clamp(3rem, 3.5vw, 7rem);
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    line-height: 50px;
+    @include mobileMax {
+      font-size: 2rem;
+      line-height: 40px;
+      text-align: center;
+    }
+    @include medium {
+      font-size: 3.5rem;
+      line-height: 80px;
+      width: 80%;
+    }
+    @include large {
+      width: 70%;
+    }
+    // @include large {
+    //   font-size: 4rem;
+    //   line-height: 104px;
+    // }
+  }
+  h6 {
+    font-weight: 400;
+    color: white;
+    // font-size: clamp(1rem, 3.5vw, 1.5rem);
+    font-size: 0.8rem;
+    line-height: 25px;
+
+    @include medium {
+      font-size: 1rem;
+      line-height: 45px;
+    }
+    @include mobileMax {
+      text-align: center;
+    }
+  }
+
+  .Herobtn {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include large {
+      gap: 3rem;
+      justify-content: flex-start;
+    }
+    @include mobileMax {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  #second-btn {
+    background-color: white;
+    color: $bgColor;
+    &:hover {
+      background-color: $bgColor;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+// boot
+.customer_review {
+  margin: 0 0.7em;
+  text-align: center;
+  padding: 6rem 0;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2em;
+  gap: 1em;
+}
+.card {
+  width: calc(100% / 3);
+  margin: 0 0.5em;
+}
+.carousel-control-prev-icon {
+  background-color: $textColor;
+  border-radius: 50%;
+}
+.carousel-control-next-icon {
+  background-color: $textColor;
+  border-radius: 50%;
+}
+.caro_shadow {
+  box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+}
+
+@media screen and (min-width: 1024.1px) and (max-width: 1442px) {
+}
+@media screen and (min-width: 768.1px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 425.1px) and (max-width: 768px) {
+  .card {
+    width: auto;
+    margin: 0 0.5em;
+  }
+  .card:first-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .cards-wrapper {
+    flex-direction: column;
+  }
+  .card {
+    width: auto;
+    margin: 0 0.5em;
+  }
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+// homeland
+// .homee {
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+// }
+
+// .welcome {
+//   position: relative;
+//   height: 80vh;
+//   width: auto;
+//   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+
+//   /* Will not allow the video to overflow the
+//   container */
+//   overflow: hidden;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .home_video {
+//   position: relative;
+// }
+
+// video {
+//   /** Simulationg background-size: cover */
+//   object-fit: cover;
+//   height: 100%;
+//   width: 100%;
+
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+
+//   // &::after{
+//   //     content: "";
+//   //     background-color: $primary-col-4;
+//   //     width: 100%;
+//   //     height: 100%;
+//   //     opacity: 1;
+//   // }
+// }
+
+// .welcome_content {
+//   position: relative;
+//   color: white;
+//   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+//   // background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.9) );
+//   height: 100%;
+// }
+
+// .welcome_content_btn {
+//   margin-top: 2em;
+// }
+// .welcome_content_btns {
+//   border-radius: 25px;
+//   padding: 0.6em 1.1em;
+//   font-size: 1em;
+//   font-weight: 600;
+// }
+// .welcome_about {
+//   background-color: $bgColor;
+//   color: white;
+//   border: transparent;
+// }
+// .welcome_about:hover {
+//   background-color: $textColor;
+//   color: white;
+// }
+// .welcome_service {
+//   background-color: white;
+//   color: $bgColor;
+//   border: transparent;
+//   margin-left: 1em;
+// }
+// .welcome_service:hover {
+//   background-color: $bgColor;
+//   color: white;
+// }
+// @media screen and (min-width: 1442px) {
+//   .overlay {
+//     width: 100%;
+//     height: 100vh;
+//     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+//     position: absolute;
+//     top: 0;
+//     left: 0em;
+//   }
+//   .welcome_content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//     margin-right: 40%;
+//     width: 50%;
+//   }
+//   .welcome_content--1 {
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     margin-bottom: 1.4em;
+//     display: flex;
+//     justify-content: left;
+//   }
+//   .welcome_content--2 {
+//     font-size: 5em;
+//     font-weight: 800;
+//     text-align: left;
+//   }
+// }
+// @media screen and (min-width: 1024.1px) and (max-width: 1442px) {
+//   .overlay {
+//     width: 100%;
+//     height: 100vh;
+//     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+//   .welcome_content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//     margin-right: 40%;
+//     width: 50%;
+//   }
+//   .welcome_content--1 {
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     margin-bottom: 1.4em;
+//     display: flex;
+//     justify-content: left;
+//   }
+//   .welcome_content--2 {
+//     font-size: 3em;
+//     font-weight: 800;
+//     text-align: left;
+//   }
+// }
+
+// @media screen and (min-width: 768.1px) and (max-width: 1024px) {
+//   .overlay {
+//     width: 100%;
+//     height: 100vh;
+//     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+//   .welcome_content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//     margin-right: 40%;
+//     width: 50%;
+//   }
+//   .welcome_content--1 {
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     margin-bottom: 1.4em;
+//   }
+//   .welcome_content--2 {
+//     font-size: 3em;
+//     font-weight: 800;
+//     text-align: center;
+//   }
+// }
+
+// @media screen and (min-width: 425px) and (max-width: 768px) {
+//   .overlay {
+//     width: 100%;
+//     height: 100vh;
+//     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+//   .welcome_content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .welcome_content--1 {
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     margin-bottom: 1.3em;
+//   }
+//   .welcome_content--2 {
+//     font-size: 2em;
+//     font-weight: 600;
+//     text-align: center;
+//   }
+// }
+
+// @media screen and (min-width: 0px) and (max-width: 425px) {
+//   .overlay {
+//     width: 100%;
+//     height: 100vh;
+//     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
+//   .welcome_content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .welcome_content--1 {
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     margin-bottom: 1.3em;
+//   }
+//   .welcome_content--2 {
+//     font-size: 1.5em;
+//     font-weight: 600;
+//     text-align: center;
+//   }
+// }
+#fixP {
+  text-align: left;
+}
+.footer_top_one--2--links {
+  @include mobileMax {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(2px);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.herotextmain,
+.heroc1,
+.ServiceSection,
+.aboutUsinfo,
+.partnership,
+.galer,
+.customer_review,
+.BookMethod {
+  transition-delay: 100ms;
+}
+
+.heroc2,
+.sc1,
+.btn1,
+.EmailBooking {
+  transition-delay: 300ms;
+}
+.servbtn {
+  transition-delay: 200ms;
+}
+.boobtn {
+  transition-delay: 300ms;
+}
+
+.sc2,
+.btn2,
+.heroc3,
+.HomeAboutusImg,
+.napri,
+.Card1 {
+  transition-delay: 500ms;
+}
+.sc3,
+.btn3,
+.Card2 {
+  transition-delay: 600ms;
+}
+.sc4,
+.mapsi,
+.btn4 {
+  transition-delay: 800ms;
+}
+.sc5,
+.btn5 {
+  transition-delay: 1000ms;
+}
+.sc6,
+.btn6 {
+  transition-delay: 1100ms;
+}
+.home_gallery_photos {
+  transition-delay: 800ms;
+}
